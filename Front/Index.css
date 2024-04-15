@@ -46,6 +46,12 @@ body{
   text-decoration: none;
 }
 
+.botao{
+  background-color: #efbd9bd3 !important;
+  border: #EFBC9B;
+  color: black;
+}
+
 /* Pág. quem somos */
 
 .titulo{
