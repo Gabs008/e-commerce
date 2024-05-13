@@ -19,7 +19,6 @@ body{
   
 
 .menu{
-
   background-color:#EFBC9B;
 }
 
@@ -32,12 +31,18 @@ body{
   color: black;
 }
 
+.botao{
+  background-color: #efbd9bd3 !important;
+  border: #EFBC9B;
+  color: black;
+}
+
+
 .footer {
   background-color:#EFBC9B;
-  padding: 50px 0;
+  width: 100%;
+  padding: 10px 0;
   text-align: center;
-  margin: 50px;
-  margin-bottom: 0px;
 
 }
 
@@ -46,10 +51,37 @@ body{
   text-decoration: none;
 }
 
-.botao{
-  background-color: #efbd9bd3 !important;
-  border: #EFBC9B;
-  color: black;
+.containerf {
+  width: 30%;
+  padding: 30px;
+}
+/* Estilo do rodapé*/
+.footer {
+  background-color: #efbd9b;
+  color: #000000;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+}
+
+.footer-list {
+  list-style: none; 
+}
+
+.footer-list a {
+  color: #000000;
+  text-decoration: none; 
+  margin-bottom: 5px; 
+  transition: color 0.3s ease; 
+}
+
+.footer-list a:hover {
+  color: #000000;
 }
 
 

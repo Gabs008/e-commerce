@@ -35,11 +35,11 @@ body{
 
 .footer {
   background-color:#EFBC9B;
-  padding: 20px 0;
+  width: 100%;
+  padding: 10px 0;
   text-align: center;
-  margin: 50px;
-
 }
+
 
 .footer a {
   color: #333;

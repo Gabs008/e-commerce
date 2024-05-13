@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Login</title>
 </head>
 <body>
     <nav class="navbar menu mb-5 ">
         <div class="container">
           <a class="navbar-brand" href="./Index.html">
-            <img src="./img/logo.png" alt="" width="80" height="80" >
+            <img src="../img/logo.png" alt="" width="80" height="80" >
           </a>
           <h1 class="logo">Carinhos em Fios</h1>
           <ul class="nav justify-content-end">
@@ -19,10 +19,10 @@
               <a class="nav-link text-dark" aria-current="page" href="./quemSomos.html">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./cadasto.html">Cadastre-se</a>
+              <a class="nav-link text-dark" href="./cadasto.php">Cadastre-se</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#"></a>
+              <a class="nav-link text-dark" href="./login.php">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" aria-disabled="false">Sair</a>
@@ -39,30 +39,24 @@
         <h1 class="logo mx-auto mt-2">Login</h1>
         <div class="row g-0">
           <div class="col-md-4 mt-3">
-            <img src="./img/undraw_undraw_sign_up_ln1s_-1-_ofs1.svg" class="img-fluid rounded-start" alt="...">
+            <img src="../img/undraw_undraw_sign_up_ln1s_-1-_ofs1.svg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-                <form class="">
+                <form action="../../Back/controlador/loginControlador.php" method="post">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend2" required>
+                    <input type="text" class="form-control" name="email" id="email" aria-describedby="inputGroupPrepend2" required>
                     <label for="inputPassword5" class="form-label">Senha</label>
-                  <input type="password" id="senha" class="form-control" aria-describedby="passwordHelpBlock">
-                  <button type="button" class="btn btn-outline-success mt-2" onclick="validacao()">Enviar</button>
+                  <input type="password" name="senha" id="senha" class="form-control" aria-describedby="passwordHelpBlock">
+                  <button type="submit" class="btn btn-outline-success mt-2" onclick="validacao()">Enviar</button>
                 </form>
             </div>
           </div>
         </div>
       </div>
 
-      <footer class="footer ms-0 me-0 ">
-        <div class="container">
-          <p>&copy; 2024 Company Carinho em Fios . All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a href="#">Termos</a></li>
-            <li class="ms-3"><a href="#">Contato</a></li>
-          </ul>
-        </div>
+      <footer class="footer ">
+        <p>&copy; Carinho em fios</p>
       </footer>
        
       <script src="./js/validacaoLogin.js"></script>
